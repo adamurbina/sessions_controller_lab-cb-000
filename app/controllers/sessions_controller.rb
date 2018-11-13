@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   before_action :require_login
+  
 
   def create
     if session[:name].nil? || session[:name].empty?
