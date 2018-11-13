@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
     if session[:name].nil? || session[:name].empty?
       redirect_to '/login'
     else
-      byebug
       session[:name] = params[:name]
     end
   end
