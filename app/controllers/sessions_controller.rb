@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
-  before_action :require_login
-  skip_before_action :require_login, only: [:create]
+  # before_action :require_login
+  # skip_before_action :require_login, only: [:create]
 
 
   def create
@@ -20,8 +20,8 @@ class SessionsController < ApplicationController
     session[:name].clear unless session[:name].nil?
   end
 
-  def require_login
-    redirect_to '/' unless current_user
-  end
+  # def require_login
+  #   redirect_to '/' unless current_user
+  # end
 
 end
