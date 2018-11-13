@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
     name ||= session[:name]
   end
 
+  def hello
+    
+  end
+
 end
