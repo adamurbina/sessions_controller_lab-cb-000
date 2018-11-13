@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   end
 
   def require_login
-    
+    redirect_to '/login' unless current_user
   end
 
 end
