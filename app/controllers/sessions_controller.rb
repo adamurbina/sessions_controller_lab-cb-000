@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
   before_action :require_login
-  
+
 
   def create
     if session[:name].nil? || session[:name].empty?
@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
   end
 
   def require_login
-    redirect_to '/login' unless current_user
+    redirect_to '/' unless current_user
   end
 
 end
