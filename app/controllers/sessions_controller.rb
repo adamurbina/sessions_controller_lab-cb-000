@@ -12,5 +12,8 @@ class SessionsController < ApplicationController
 
   end
 
+  def require_login
+    
+  end
 
 end
