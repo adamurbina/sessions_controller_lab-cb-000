@@ -16,6 +16,10 @@ class SessionsController < ApplicationController
 
   end
 
+  def destroy
+    
+  end
+
   def require_login
     redirect_to '/' unless current_user
   end
