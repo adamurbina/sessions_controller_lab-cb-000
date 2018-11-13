@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
       redirect_to '/login'
     else
       session[:name] = params[:name]
-      binding.pry
+      byebug
     end
   end
 
