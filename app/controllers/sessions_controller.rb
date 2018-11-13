@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:name].destroy
+    session[:name].clear
   end
 
   def require_login
